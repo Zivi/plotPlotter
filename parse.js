@@ -1,9 +1,20 @@
 var fs = require('fs');
 
-fs.readFile('pl_sample.json', {encoding: 'utf-8'}, function(err,data){
-    if (!err) {
-    console.log('received data: ' + data);
-    } else {
-        console.log(err);
-    }
+var charReplacements = {
+  'Ã©': 'é',
+  'Ã§': 'ç',
+  'Ã¨': 'è',
+  'Ã¹': 'ù',
+  'Ã‰': 'É',
+  'Ã®': 'î',
+  'Ã': 'à'
+
+}
+
+var data = fs.readFileSync('pl_sample.json', {encoding: 'utf-8'});
+Object.keys(charReplacements).forEach(function(key) {
+  var value = charReplacements[key];
+  data = data.replace(new RegExp(key, 'g'), value);
 });
+var parsedData = JSON.parse(data);
+console.log(parsedData);
