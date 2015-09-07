@@ -1,0 +1,25 @@
+doctype html
+html.no-js(lang='')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title plotPlottr
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='main.css')
+    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBU5kvtz9Y6edk6IfpT8qfeylWmSgDaKkA')
+  body
+    h1 Plot Plottr
+    h2 Find people at Père Lachaise
+    .row
+      .col-md-1.main-body Name
+        each plot in monuments
+          = plot.nom
+          br
+      .col-md-1.main-body
+        | Map
+        #map-canvas
+    script(src='main.js')
