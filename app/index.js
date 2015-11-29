@@ -13,6 +13,10 @@ app.get('/', function(req, res){
   res.render('index.jade', plotData);
 });
 
+app.get('/markers', function(req, res){
+  res.send(plotData);
+});
+
 app.listen(3000, function() {
   console.log('listening on port 3000');
 });

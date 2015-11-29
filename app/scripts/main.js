@@ -8,3 +8,7 @@ function initialize() {
   console.log("map loaded")
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+$.get('/markers', function(data){
+  console.log(data);
+});
