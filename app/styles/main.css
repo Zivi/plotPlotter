@@ -8,6 +8,9 @@ body {
   border: 1px solid black;
   height: 400px;
 }
+#name {
+  overflow: scroll;
+}
 #map-canvas {
   height: 300px;
 }

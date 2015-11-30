@@ -14,7 +14,10 @@ app.get('/', function(req, res){
 });
 
 app.get('/markers', function(req, res){
-  res.send(plotData);
+  var monumetsLatLong = plotData.monuments.map(function (monument) {
+     return { lat: +monument.node_osm.latitude, lng: +monument.node_osm.longitude };
+  });
+  res.send(monumetsLatLong);
 });
 
 app.listen(3000, function() {
