@@ -1,4 +1,6 @@
+'use strict';
 function initialize() {
+
   var mapOptions = {
     center: { lat: 48.8607200, lng: 2.3949340},
     zoom: 15
@@ -7,12 +9,12 @@ function initialize() {
       mapOptions);
   console.log("map loaded")
 
-  $.get('/markers', function(data){
-    data.forEach(function(monument){
-      var marker = new google.maps.Marker({
-         position: {lat: monument.lat, lng: monument.lng},
-         map: map
-       });
+  $('label').click(function(event) {
+    var lat = parseFloat(event.currentTarget.dataset.lat);
+    var lng = parseFloat(event.currentTarget.dataset.lng);
+    var marker = new google.maps.Marker({
+      position: {lat: lat, lng: lng},
+      map: map
     });
   });
 }

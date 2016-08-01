@@ -17,9 +17,14 @@ html.no-js(lang='')
     h1 Plot Plottr
     h2 Find people at Père Lachaise
     .row
-      .col-md-1.main-body#name
+      .col-md-1.main-body.name
         each plot in monuments
-          = plot.nom
+          label(data-lat=plot.lat, data-lng=plot.lng)
+            input(
+              type='checkbox'
+              name=plot.name
+            )
+            = plot.name
           br
       .col-md-1.main-body
         | Map
