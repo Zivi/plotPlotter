@@ -19,10 +19,12 @@ html.no-js(lang='')
     .row
       .col-md-1.main-body.name
         each plot in monuments
-          label(data-lat=plot.lat, data-lng=plot.lng)
-            input(
+          label
+            input.plot-names(
               type='checkbox'
               name=plot.name
+              data-lat=plot.lat
+              data-lng=plot.lng
             )
             = plot.name
           br

@@ -7,15 +7,26 @@ function initialize() {
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
-  console.log("map loaded")
+  console.log("map loaded");
 
-  $('label').click(function(event) {
-    var lat = parseFloat(event.currentTarget.dataset.lat);
-    var lng = parseFloat(event.currentTarget.dataset.lng);
-    var marker = new google.maps.Marker({
-      position: {lat: lat, lng: lng},
-      map: map
-    });
+  $('.plot-names').click(function(event) {
+    var marker,
+    var $this = $(event.currentTarget),
+    var nom = $this.attr('name'),
+    var lat = $this.data('lat'),
+    var lng = $this.data('lng'),
+    if ($this.prop('checked')) {
+      marker = new google.maps.Marker({
+        position: {lat: lat, lng: lng},
+        map: map,
+        title: nom
+      });
+      $this.data('marker', marker);
+    } else {
+      marker = $this.data('marker');
+      marker.setMap(null);
+    }
   });
 }
+
 google.maps.event.addDomListener(window, 'load', initialize);
