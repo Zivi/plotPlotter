@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>plotPlottr</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="app/styles/main.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU5kvtz9Y6edk6IfpT8qfeylWmSgDaKkA"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Plot Plotter</h1>
+    <h3>Père Lachaise people finder</h3>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 main-body name">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Famille d'Aboville" data-lat='48.86072' data-lng='2.394934' class="plot-names">Famille d'Aboville
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Tombeau d'Abélard et Héloïse" data-lat='48.8591875' data-lng='2.3919009' class="plot-names">Tombeau d'Abélard et Héloïse
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Alain" data-lat='48.861016' data-lng='2.399096' class="plot-names">Alain
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Frank Alamo" data-lat='48.861065' data-lng='2.39491' class="plot-names">Frank Alamo
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-Charles Alphand" data-lat='48.861694' data-lng='2.390127' class="plot-names">Jean-Charles Alphand
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Antoine Balthazar Joseph d'André" data-lat='48.858398' data-lng='2.395365' class="plot-names">Antoine Balthazar Joseph d'André
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Vincent Ansquer" data-lat='48.8609848' data-lng='2.3913417' class="plot-names">Vincent Ansquer
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Guillaume Apollinaire" data-lat='48.8626557' data-lng='2.3947199' class="plot-names">Guillaume Apollinaire
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Karel Appel" data-lat='48.861172' data-lng='2.393977' class="plot-names">Karel Appel
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="François Arago" data-lat='48.860536' data-lng='2.391114' class="plot-names">François Arago
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="François d'Astier de La Vigerie" data-lat='48.860762' data-lng='2.392166' class="plot-names">François d'Astier de La Vigerie
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Miguel àngel Asturias" data-lat='48.8597856' data-lng='2.3928042' class="plot-names">Miguel àngel Asturias
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Tony Aubin" data-lat='48.861099' data-lng='2.397395' class="plot-names">Tony Aubin
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Honoré de Balzac" data-lat='48.8627718' data-lng='2.3931199' class="plot-names">Honoré de Balzac
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Henri Barbusse" data-lat='48.860169' data-lng='2.399848' class="plot-names">Henri Barbusse
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Paul Barras" data-lat='48.859139' data-lng='2.395985' class="plot-names">Paul Barras
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Alain Bashung" data-lat='48.860254' data-lng='2.39341' class="plot-names">Alain Bashung
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-Louis Baudelocque" data-lat='48.861482' data-lng='2.394698' class="plot-names">Jean-Louis Baudelocque
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Monument au Bazar de la Charité" data-lat='48.860962' data-lng='2.396863' class="plot-names">Monument au Bazar de la Charité
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-Adolphe Beaucé" data-lat='48.862894' data-lng='2.39341' class="plot-names">Jean-Adolphe Beaucé
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Félix de Beaujour" data-lat='48.863162' data-lng='2.393453' class="plot-names">Félix de Beaujour
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Vincenzo Bellini" data-lat='48.860438' data-lng='2.393024' class="plot-names">Vincenzo Bellini
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Claude Bernard" data-lat='48.860635' data-lng='2.393582' class="plot-names">Claude Bernard
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jacques-Henri Bernardin de Saint-Pierre" data-lat='48.860423' data-lng='2.392917' class="plot-names">Jacques-Henri Bernardin de Saint-Pierre
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Sarah Bernhardt" data-lat='48.861327' data-lng='2.395384' class="plot-names">Sarah Bernhardt
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Julien Bessières" data-lat='48.859528' data-lng='2.397298' class="plot-names">Julien Bessières
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Fulgence Bienvenüe" data-lat='48.864009' data-lng='2.394676' class="plot-names">Fulgence Bienvenüe
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Georges Bizet" data-lat='48.8623244' data-lng='2.391787' class="plot-names">Georges Bizet
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Louis Blanc" data-lat='48.861779' data-lng='2.391286' class="plot-names">Louis Blanc
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Auguste Blanqui" data-lat='48.861214' data-lng='2.396071' class="plot-names">Auguste Blanqui
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="François-Antoine de Boissy d'Anglas" data-lat='48.85904' data-lng='2.396092' class="plot-names">François-Antoine de Boissy d'Anglas
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Bonne Maman" data-lat='48.860621' data-lng='2.398088' class="plot-names">Bonne Maman
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Pierre Bourdieu" data-lat='48.859703' data-lng='2.395651' class="plot-names">Pierre Bourdieu
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Édouard Branly" data-lat='48.860536' data-lng='2.392423' class="plot-names">Édouard Branly
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Pierre Brasseur" data-lat='48.86072' data-lng='2.389226' class="plot-names">Pierre Brasseur
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean Anthelme Brillat-Savarin" data-lat='48.859774' data-lng='2.395513' class="plot-names">Jean Anthelme Brillat-Savarin
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Alexandre Brongniart" data-lat='48.860635' data-lng='2.392809' class="plot-names">Alexandre Brongniart
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Claude Brosset" data-lat='48.858196' data-lng='2.395227' class="plot-names">Claude Brosset
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Gilbert Bécaud" data-lat='48.861141' data-lng='2.394935' class="plot-names">Gilbert Bécaud
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Octave de Béhague" data-lat='48.85891' data-lng='2.396893' class="plot-names">Octave de Béhague
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Marcel Cachin" data-lat='48.8599157' data-lng='2.3998601' class="plot-names">Marcel Cachin
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Gustave Caillebotte" data-lat='48.862414' data-lng='2.392123' class="plot-names">Gustave Caillebotte
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-Jacques-Régis de Cambacérès" data-lat='48.859252' data-lng='2.396457' class="plot-names">Jean-Jacques-Régis de Cambacérès
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Pierre-Augustin Caron de Beaumarchais" data-lat='48.858842' data-lng='2.396264' class="plot-names">Pierre-Augustin Caron de Beaumarchais
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Pierre Cartellier" data-lat='48.861553' data-lng='2.392573' class="plot-names">Pierre Cartellier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Claude Chabrol" data-lat='48.860558' data-lng='2.392547' class="plot-names">Claude Chabrol
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Antoine Marie Chamans de Lavalette" data-lat='48.8587457' data-lng='2.3966952' class="plot-names">Antoine Marie Chamans de Lavalette
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Louis Pierre Quentin de Champcenetz" data-lat='48.861115' data-lng='2.394354' class="plot-names">Louis Pierre Quentin de Champcenetz
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-François Champollion" data-lat='48.8599858' data-lng='2.3940879' class="plot-names">Jean-François Champollion
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Claude Chappe" data-lat='48.859068' data-lng='2.395148' class="plot-names">Claude Chappe
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-Antoine Chaptal" data-lat='48.86192' data-lng='2.39826' class="plot-names">Jean-Antoine Chaptal
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Luigi Cherubini" data-lat='48.8601705' data-lng='2.3927894' class="plot-names">Luigi Cherubini
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Frédéric Chopin" data-lat='48.8601213' data-lng='2.392808' class="plot-names">Frédéric Chopin
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Patrice Chéreau" data-lat='48.859112' data-lng='2.394645' class="plot-names">Patrice Chéreau
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="France Clidat" data-lat='48.859673' data-lng='2.392798' class="plot-names">France Clidat
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Colette" data-lat='48.860579' data-lng='2.390578' class="plot-names">Colette
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Auguste Comte" data-lat='48.8597855' data-lng='2.3942322' class="plot-names">Auguste Comte
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Benjamin Constant" data-lat='48.859096' data-lng='2.39547' class="plot-names">Benjamin Constant
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Bruno Coquatrix" data-lat='48.859393' data-lng='2.398152' class="plot-names">Bruno Coquatrix
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jules Cornély" data-lat='48.861305' data-lng='2.396898' class="plot-names">Jules Cornély
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-Baptiste Camille Corot" data-lat='48.860903' data-lng='2.394612' class="plot-names">Jean-Baptiste Camille Corot
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Frédéric Cournet" data-lat='48.860395' data-lng='2.396886' class="plot-names">Frédéric Cournet
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Georges Courteline" data-lat='48.862329' data-lng='2.397316' class="plot-names">Georges Courteline
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Thomas Couture" data-lat='48.8607223' data-lng='2.3916025' class="plot-names">Thomas Couture
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Charles Crozatier" data-lat='48.862357' data-lng='2.39341' class="plot-names">Charles Crozatier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Georges Cuvier" data-lat='48.8599553' data-lng='2.3920732' class="plot-names">Georges Cuvier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean Melchior Dabadie de Bernet" data-lat='48.859051' data-lng='2.397138' class="plot-names">Jean Melchior Dabadie de Bernet
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Pierre Dac" data-lat='48.862767' data-lng='2.396243' class="plot-names">Pierre Dac
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Édouard Daladier" data-lat='48.863501' data-lng='2.391264' class="plot-names">Édouard Daladier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Alphonse Daudet" data-lat='48.860198' data-lng='2.395277' class="plot-names">Alphonse Daudet
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Sophie Daumier" data-lat='48.8611655' data-lng='2.3949235' class="plot-names">Sophie Daumier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Honoré Daumier" data-lat='48.860875' data-lng='2.394698' class="plot-names">Honoré Daumier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jacques-Louis David" data-lat='48.861355' data-lng='2.392359' class="plot-names">Jacques-Louis David
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Louis Nicolas Davout" data-lat='48.8589314' data-lng='2.3964384' class="plot-names">Louis Nicolas Davout
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Charles Degeorge" data-lat='48.861126' data-lng='2.39632' class="plot-names">Charles Degeorge
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Georges Deherme" data-lat='48.8597415' data-lng='2.3943819' class="plot-names">Georges Deherme
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Cino Del Duca" data-lat='48.861525' data-lng='2.392509' class="plot-names">Cino Del Duca
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Eugène Delacroix" data-lat='48.862787' data-lng='2.3936382' class="plot-names">Eugène Delacroix
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Pierre Desproges" data-lat='48.860056' data-lng='2.392809' class="plot-names">Pierre Desproges
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Juliette Dodu" data-lat='48.858899' data-lng='2.396307' class="plot-names">Juliette Dodu
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Lucas Dolega" data-lat='48.861404' data-lng='2.395243' class="plot-names">Lucas Dolega
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Tombe du Dragon" data-lat='48.859026' data-lng='2.395492' class="plot-names">Tombe du Dragon
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jacques Duclos" data-lat='48.859887' data-lng='2.399826' class="plot-names">Jacques Duclos
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Isadora Duncan" data-lat='48.8624253' data-lng='2.3954178' class="plot-names">Isadora Duncan
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Guillaume Dupuytren" data-lat='48.858885' data-lng='2.396801' class="plot-names">Guillaume Dupuytren
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Georges Enesco" data-lat='48.862202' data-lng='2.391822' class="plot-names">Georges Enesco
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Max Ernst" data-lat='48.8622181' data-lng='2.3963152' class="plot-names">Max Ernst
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Ange Marie d'Eymar" data-lat='48.859673' data-lng='2.394465' class="plot-names">Ange Marie d'Eymar
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Colonel Fabien" data-lat='48.859703' data-lng='2.399611' class="plot-names">Colonel Fabien
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Alexandre Falguière" data-lat='48.860875' data-lng='2.392187' class="plot-names">Alexandre Falguière
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Félix Faure" data-lat='48.860734' data-lng='2.391651' class="plot-names">Félix Faure
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Christian Fechner" data-lat='48.8617058' data-lng='2.3884516' class="plot-names">Christian Fechner
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-Pierre-Louis de Fontanes" data-lat='48.858758' data-lng='2.3962' class="plot-names">Jean-Pierre-Louis de Fontanes
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Joseph Fourier" data-lat='48.8600462' data-lng='2.3938832' class="plot-names">Joseph Fourier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Maximilien Sébastien Foy" data-lat='48.859096' data-lng='2.395577' class="plot-names">Maximilien Sébastien Foy
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Augustin Fresnel" data-lat='48.8597319' data-lng='2.3936651' class="plot-names">Augustin Fresnel
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Célestine Galli-Marié" data-lat='48.8615073' data-lng='2.3918887' class="plot-names">Célestine Galli-Marié
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Louis-Antoine Garnier-Pagès" data-lat='48.859463' data-lng='2.395062' class="plot-names">Louis-Antoine Garnier-Pagès
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Martin Michel Charles Gaudin" data-lat='48.86048' data-lng='2.394376' class="plot-names">Martin Michel Charles Gaudin
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Louis Joseph Gay-Lussac" data-lat='48.860649' data-lng='2.394655' class="plot-names">Louis Joseph Gay-Lussac
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Étienne Geoffroy Saint-Hilaire" data-lat='48.85952' data-lng='2.394998' class="plot-names">Étienne Geoffroy Saint-Hilaire
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="André Gill" data-lat='48.860282' data-lng='2.396994' class="plot-names">André Gill
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Annie Girardot" data-lat='48.862089' data-lng='2.39356' class="plot-names">Annie Girardot
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jacques Nicolas Gobert" data-lat='48.8588' data-lng='2.39635' class="plot-names">Jacques Nicolas Gobert
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Piero Gobetti" data-lat='48.860536' data-lng='2.398624' class="plot-names">Piero Gobetti
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Laurent de Gouvion-Saint-Cyr" data-lat='48.858555' data-lng='2.39619' class="plot-names">Laurent de Gouvion-Saint-Cyr
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Zénobe Gramme" data-lat='48.860833' data-lng='2.397895' class="plot-names">Zénobe Gramme
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Stéphane Grappelli" data-lat='48.862174' data-lng='2.395663' class="plot-names">Stéphane Grappelli
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-Henry-Louis Greffulhe" data-lat='48.860536' data-lng='2.395406' class="plot-names">Jean-Henry-Louis Greffulhe
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Emmanuel de Grouchy" data-lat='48.8611069' data-lng='2.3916616' class="plot-names">Emmanuel de Grouchy
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jules Guesde" data-lat='48.862541' data-lng='2.395384' class="plot-names">Jules Guesde
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Monument funéraire de Georges Guët" data-lat='48.859463' data-lng='2.394955' class="plot-names">Monument funéraire de Georges Guët
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Théodore Géricault" data-lat='48.86096' data-lng='2.392831' class="plot-names">Théodore Géricault
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Samuel Hahnemann" data-lat='48.860536' data-lng='2.39429' class="plot-names">Samuel Hahnemann
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Georges Eugène Haussmann" data-lat='48.860748' data-lng='2.391179' class="plot-names">Georges Eugène Haussmann
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Sadegh Hedayat" data-lat='48.863134' data-lng='2.395191' class="plot-names">Sadegh Hedayat
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Téo Hernandez" data-lat='48.861059' data-lng='2.395363' class="plot-names">Téo Hernandez
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Louis Hersent" data-lat='48.858574' data-lng='2.39484' class="plot-names">Louis Hersent
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Ignace Hoff" data-lat='48.860889' data-lng='2.39223' class="plot-names">Ignace Hoff
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Ticky Holgado" data-lat='48.861666' data-lng='2.394526' class="plot-names">Ticky Holgado
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Joseph Léopold Sigisbert Hugo" data-lat='48.85983' data-lng='2.395406' class="plot-names">Joseph Léopold Sigisbert Hugo
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Ugür Hüküm" data-lat='48.859352' data-lng='2.393908' class="plot-names">Ugür Hüküm
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-Auguste-Dominique Ingres" data-lat='48.861412' data-lng='2.394333' class="plot-names">Jean-Auguste-Dominique Ingres
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Adolphe Itasse" data-lat='48.858459' data-lng='2.395362' class="plot-names">Adolphe Itasse
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jules Joffrin" data-lat='48.860226' data-lng='2.39826' class="plot-names">Jules Joffrin
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Léon Jouhaux" data-lat='48.863049' data-lng='2.397015' class="plot-names">Léon Jouhaux
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="François Étienne Kellermann" data-lat='48.859774' data-lng='2.394569' class="plot-names">François Étienne Kellermann
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Philippe Khorsand" data-lat='48.8613527' data-lng='2.3946884' class="plot-names">Philippe Khorsand
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Henri Krasucki" data-lat='48.859417' data-lng='2.399038' class="plot-names">Henri Krasucki
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean de La Fontaine" data-lat='48.860565' data-lng='2.395062' class="plot-names">Jean de La Fontaine
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Pierre Lachambeaudie" data-lat='48.862812' data-lng='2.392937' class="plot-names">Pierre Lachambeaudie
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Étienne Lamy" data-lat='48.8618534' data-lng='2.3934719' class="plot-names">Étienne Lamy
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Marie Laurencin" data-lat='48.862922' data-lng='2.397444' class="plot-names">Marie Laurencin
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Alphonse Lavallée" data-lat='48.860649' data-lng='2.39532' class="plot-names">Alphonse Lavallée
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Pierre et Hélène Lazareff" data-lat='48.859365' data-lng='2.391479' class="plot-names">Pierre et Hélène Lazareff
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Charles-François Lebrun" data-lat='48.859181' data-lng='2.39356' class="plot-names">Charles-François Lebrun
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Alexandre Ledru-Rollin" data-lat='48.860706' data-lng='2.391565' class="plot-names">Alexandre Ledru-Rollin
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Édith Lefel" data-lat='48.862102' data-lng='2.394267' class="plot-names">Édith Lefel
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Aubert Lemeland" data-lat='48.861145' data-lng='2.393892' class="plot-names">Aubert Lemeland
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Ferdinand de Lesseps" data-lat='48.8588033' data-lng='2.3945025' class="plot-names">Ferdinand de Lesseps
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean-François Lyotard" data-lat='48.858729' data-lng='2.393517' class="plot-names">Jean-François Lyotard
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Étienne-Jacques-Joseph Macdonald" data-lat='48.8586237' data-lng='2.396391' class="plot-names">Étienne-Jacques-Joseph Macdonald
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Yves du Manoir" data-lat='48.859718' data-lng='2.394783' class="plot-names">Yves du Manoir
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Marcel Marceau" data-lat='48.860879' data-lng='2.393314' class="plot-names">Marcel Marceau
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Georges Marchais" data-lat='48.859746' data-lng='2.399676' class="plot-names">Georges Marchais
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Pierre Marinovitch" data-lat='48.861469' data-lng='2.39702' class="plot-names">Pierre Marinovitch
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="André Masséna" data-lat='48.859012' data-lng='2.396586' class="plot-names">André Masséna
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Maurice Merleau-Ponty" data-lat='48.862287' data-lng='2.393196' class="plot-names">Maurice Merleau-Ponty
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jules Michelet" data-lat='48.862569' data-lng='2.393045' class="plot-names">Jules Michelet
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Caroline Miolan-Carvalho" data-lat='48.8629618' data-lng='2.3902204' class="plot-names">Caroline Miolan-Carvalho
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Amedeo Modigliani" data-lat='48.8598029' data-lng='2.3985154' class="plot-names">Amedeo Modigliani
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Molière" data-lat='48.860536' data-lng='2.395105' class="plot-names">Molière
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Silvia Monfort" data-lat='48.861242' data-lng='2.39841' class="plot-names">Silvia Monfort
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Gaspard Monge" data-lat='48.860212' data-lng='2.393603' class="plot-names">Gaspard Monge
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jim Morrison" data-lat='48.8592676' data-lng='2.393752' class="plot-names">Jim Morrison
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="René Mouchotte" data-lat='48.8631279' data-lng='2.3912635' class="plot-names">René Mouchotte
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Marcel Mouloudji" data-lat='48.861157' data-lng='2.395277' class="plot-names">Marcel Mouloudji
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Mur des Fédérés" data-lat='48.8597013' data-lng='2.4000175' class="plot-names">Mur des Fédérés
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Joachim Murat" data-lat='48.859068' data-lng='2.396672' class="plot-names">Joachim Murat
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Alfred de Musset" data-lat='48.86072' data-lng='2.391114' class="plot-names">Alfred de Musset
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Georges Méliès" data-lat='48.863331' data-lng='2.390664' class="plot-names">Georges Méliès
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Nadar" data-lat='48.858983' data-lng='2.397037' class="plot-names">Nadar
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Gérard de Nerval" data-lat='48.862739' data-lng='2.393174' class="plot-names">Gérard de Nerval
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Michel Ney" data-lat='48.858772' data-lng='2.396071' class="plot-names">Michel Ney
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Anna de Noailles" data-lat='48.85904' data-lng='2.395706' class="plot-names">Anna de Noailles
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean Nohain" data-lat='48.862089' data-lng='2.39738' class="plot-names">Jean Nohain
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Victor Noir" data-lat='48.860819' data-lng='2.396543' class="plot-names">Victor Noir
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Tony Noël" data-lat='48.859592' data-lng='2.397383' class="plot-names">Tony Noël
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Christophe-Philippe Oberkampf" data-lat='48.859689' data-lng='2.396071' class="plot-names">Christophe-Philippe Oberkampf
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Max Ophüls" data-lat='48.862569' data-lng='2.395363' class="plot-names">Max Ophüls
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Malik Oussekine" data-lat='48.858038' data-lng='2.395556' class="plot-names">Malik Oussekine
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Andranik Ozanian" data-lat='48.86048' data-lng='2.399418' class="plot-names">Andranik Ozanian
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="René Panhard" data-lat='48.858475' data-lng='2.395771' class="plot-names">René Panhard
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Antoine Parmentier" data-lat='48.860141' data-lng='2.395492' class="plot-names">Antoine Parmentier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Casimir Perier" data-lat='48.8600225' data-lng='2.3936303' class="plot-names">Casimir Perier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Claude-Victor Perrin" data-lat='48.859627' data-lng='2.394392' class="plot-names">Claude-Victor Perrin
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Michel Petrucciani" data-lat='48.860056' data-lng='2.392874' class="plot-names">Michel Petrucciani
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Édith Piaf" data-lat='48.8596833' data-lng='2.3988939' class="plot-names">Édith Piaf
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Christian Pineau" data-lat='48.859576' data-lng='2.398882' class="plot-names">Christian Pineau
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Camille Pissarro" data-lat='48.8591071' data-lng='2.3914902' class="plot-names">Camille Pissarro
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Roger Planchon" data-lat='48.86076' data-lng='2.3938' class="plot-names">Roger Planchon
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jacques Plante" data-lat='48.861807' data-lng='2.395191' class="plot-names">Jacques Plante
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Ignace Joseph Pleyel" data-lat='48.860508' data-lng='2.393131' class="plot-names">Ignace Joseph Pleyel
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Nicolas Ponce" data-lat='48.859257' data-lng='2.3974' class="plot-names">Nicolas Ponce
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Elvire Popesco" data-lat='48.86319' data-lng='2.395985' class="plot-names">Elvire Popesco
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Francis Poulenc" data-lat='48.858758' data-lng='2.393088' class="plot-names">Francis Poulenc
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Charles André Pozzo di Borgo" data-lat='48.861664' data-lng='2.391277' class="plot-names">Charles André Pozzo di Borgo
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="James Pradier" data-lat='48.86079' data-lng='2.394204' class="plot-names">James Pradier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Marcel Proust" data-lat='48.8630712' data-lng='2.394975' class="plot-names">Marcel Proust
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Mademoiselle Rachel" data-lat='48.859562' data-lng='2.391114' class="plot-names">Mademoiselle Rachel
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Olivier Raoux" data-lat='48.863605' data-lng='2.396443' class="plot-names">Olivier Raoux
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="François-Vincent Raspail" data-lat='48.860141' data-lng='2.393904' class="plot-names">François-Vincent Raspail
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Willy Rizzo" data-lat='48.861065' data-lng='2.393418' class="plot-names">Willy Rizzo
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Étienne Robertson" data-lat='48.859435' data-lng='2.392359' class="plot-names">Étienne Robertson
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jacob Roblès" data-lat='48.859322' data-lng='2.391479' class="plot-names">Jacob Roblès
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jules Romains" data-lat='48.860113' data-lng='2.390428' class="plot-names">Jules Romains
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Gioachino Rossini" data-lat='48.860706' data-lng='2.39105' class="plot-names">Gioachino Rossini
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="James de Rothschild" data-lat='48.859351' data-lng='2.391286' class="plot-names">James de Rothschild
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Claude Henri de Rouvroy, comte de Saint Simon" data-lat='48.859689' data-lng='2.395642' class="plot-names">Claude Henri de Rouvroy, comte de Saint Simon
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Charles-Étienne-François Ruty" data-lat='48.858983' data-lng='2.396672' class="plot-names">Charles-Étienne-François Ruty
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Henri Salvador" data-lat='48.859633' data-lng='2.398839' class="plot-names">Henri Salvador
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Madame Sans-Gêne" data-lat='48.85904' data-lng='2.396586' class="plot-names">Madame Sans-Gêne
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Horace Émile Say" data-lat='48.858578' data-lng='2.396377' class="plot-names">Horace Émile Say
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Victor Schœlcher" data-lat='48.861412' data-lng='2.393947' class="plot-names">Victor Schœlcher
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Eugène Scribe" data-lat='48.859365' data-lng='2.397187' class="plot-names">Eugène Scribe
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Georges Seurat" data-lat='48.8623521' data-lng='2.390531' class="plot-names">Georges Seurat
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Emmanuel-Joseph Sieyès" data-lat='48.858532' data-lng='2.395599' class="plot-names">Emmanuel-Joseph Sieyès
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="David Sintzheim" data-lat='48.85904' data-lng='2.391737' class="plot-names">David Sintzheim
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Mano Solo" data-lat='48.860452' data-lng='2.392552' class="plot-names">Mano Solo
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Frédéric Soulié" data-lat='48.8628596' data-lng='2.392869' class="plot-names">Frédéric Soulié
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Émile Souvestre" data-lat='48.862836' data-lng='2.393178' class="plot-names">Émile Souvestre
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Gertrude Stein" data-lat='48.86079' data-lng='2.399375' class="plot-names">Gertrude Stein
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Élisabeth Alexandrovna Stroganoff" data-lat='48.859576' data-lng='2.394977' class="plot-names">Élisabeth Alexandrovna Stroganoff
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Louis-Gabriel Suchet" data-lat='48.859351' data-lng='2.396929' class="plot-names">Louis-Gabriel Suchet
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Raymond de Sèze" data-lat='48.8614688' data-lng='2.3925529' class="plot-names">Raymond de Sèze
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Adolphe Thiers" data-lat='48.861087' data-lng='2.392895' class="plot-names">Adolphe Thiers
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Maurice Thorez" data-lat='48.859943' data-lng='2.39989' class="plot-names">Maurice Thorez
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Gaston Tissandier" data-lat='48.859703' data-lng='2.395298' class="plot-names">Gaston Tissandier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jean Topart" data-lat='48.8615364' data-lng='2.3918726' class="plot-names">Jean Topart
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Daniel Toscan du Plantier" data-lat='48.861214' data-lng='2.394891' class="plot-names">Daniel Toscan du Plantier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Monument aux travailleurs municipaux" data-lat='48.8627153' data-lng='2.3927321' class="plot-names">Monument aux travailleurs municipaux
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Anne-François-Charles Trelliard" data-lat='48.8584651' data-lng='2.3953018' class="plot-names">Anne-François-Charles Trelliard
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Marie Trintignant" data-lat='48.861186' data-lng='2.394912' class="plot-names">Marie Trintignant
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Henry de Triqueti" data-lat='48.861129' data-lng='2.39532' class="plot-names">Henry de Triqueti
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Paul Vaillant-Couturier" data-lat='48.860141' data-lng='2.399869' class="plot-names">Paul Vaillant-Couturier
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jules Vallès" data-lat='48.862287' data-lng='2.390342' class="plot-names">Jules Vallès
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Jack Vanarsky" data-lat='48.860107' data-lng='2.393003' class="plot-names">Jack Vanarsky
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Vania Vilers" data-lat='48.85994' data-lng='2.39293' class="plot-names">Vania Vilers
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Louis Verneuil" data-lat='48.86367' data-lng='2.396157' class="plot-names">Louis Verneuil
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Louis Visconti" data-lat='48.860649' data-lng='2.390878' class="plot-names">Louis Visconti
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Dominique Vivant Denon" data-lat='48.8601567' data-lng='2.3927356' class="plot-names">Dominique Vivant Denon
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Richard Wallace" data-lat='48.859167' data-lng='2.3962' class="plot-names">Richard Wallace
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Oscar Wilde" data-lat='48.8618038' data-lng='2.3979473' class="plot-names">Oscar Wilde
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Yves Montand et Simone Signoret" data-lat='48.861892' data-lng='2.395535' class="plot-names">Yves Montand et Simone Signoret
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Achille Zavatta" data-lat='48.862146' data-lng='2.396071' class="plot-names">Achille Zavatta
+            </label><br>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="Paul Éluard" data-lat='48.859986' data-lng='2.399912' class="plot-names">Paul Éluard
+            </label><br>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 main-body map">
+          <div id="map-canvas"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app/scripts/main.js"></script>
+  </body>
+</html>
