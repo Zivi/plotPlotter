@@ -10,7 +10,7 @@ html.no-js(lang='')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
     // Optional theme
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
-    link(rel='stylesheet', href='main.css')
+    link(rel='stylesheet', href='app/styles/main.css')
     script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBU5kvtz9Y6edk6IfpT8qfeylWmSgDaKkA')
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
 
@@ -32,6 +32,5 @@ html.no-js(lang='')
                 = plot.name
               br
         .col-xs-12.col-sm-8.main-body.map
-          | Map
           #map-canvas
-    script(src='main.js')
+    script(src='app/scripts/main.js')

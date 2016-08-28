@@ -9,6 +9,7 @@ h1, h3 {
 .main-body {
   border: 1px solid #ccc;
   height: 83vh;
+  padding: 10px;
 }
 .name {
   overflow: scroll;
