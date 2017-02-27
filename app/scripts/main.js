@@ -9,6 +9,12 @@ function initialize() {
       mapOptions);
   console.log('map loaded');
 
+  $('.search-name').keydown(function(event) {
+    var re = new RegExp(event.key, 'i');
+    //hide all the elements in .plot-names except those that contain the characters
+    // in the .search-name box
+  });
+
   $('.plot-names').click(function(event) {
     var marker,
       infowindow,

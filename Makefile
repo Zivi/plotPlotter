@@ -1,2 +1,2 @@
 build:
-	node generate > index.html
+	node generate.js > index.html
