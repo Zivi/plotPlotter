@@ -8,29 +8,40 @@ h1, h3 {
 }
 .main-body {
   border: 1px solid #ccc;
-  height: 83vh;
+  height: 77vh;
   padding: 10px;
+}
+.search-name {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 0;
 }
 .name {
   overflow: scroll;
   border-right: none;
 }
+.map {
+  margin-bottom: 10px;
+}
 #map-canvas {
-  height: 79vh;
+  height: 74vh;
+}
+.croissant {
+  padding: 0 10px 0 5px;
 }
 
 @media (max-width: 768px) {
   .name {
-    height: 30vh;
+    height: 20vh;
     border-bottom: none;
     border-right: 1px solid #ccc;
   }
 
   .map {
-    height: 40vh;
+    height: 50vh;
   }
 
   #map-canvas {
-    height: 35vh;
+    height: 45vh;
   }
 }

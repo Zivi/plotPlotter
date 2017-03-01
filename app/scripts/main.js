@@ -9,10 +9,15 @@ function initialize() {
       mapOptions);
   console.log('map loaded');
 
-  $('.search-name').keydown(function(event) {
-    var re = new RegExp(event.key, 'i');
-    //hide all the elements in .plot-names except those that contain the characters
-    // in the .search-name box
+  $('.search-name').keyup(function(event) {
+    var searchTerm = event.target.value.toLowerCase();
+    $('.checkbox').each(function(index, element){
+      if ($(element).find('.plot-names').attr('name').toLowerCase().indexOf(searchTerm) !== -1) {
+        $('.checkbox').eq(index).show();
+      } else {
+        $('.checkbox').eq(index).hide();
+      }
+    })
   });
 
   $('.plot-names').click(function(event) {

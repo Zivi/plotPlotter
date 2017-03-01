@@ -11,9 +11,10 @@
     <!-- Optional theme-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="app/styles/main.css">
-    <!-- Uncomment for local development--><script src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
-    <!-- Uncomment for production-->
-    <!--script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBU5kvtz9Y6edk6IfpT8qfeylWmSgDaKkA')-->
+    <!-- Maps for local development-->
+    <!--script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false')-->
+    <!-- Maps for production-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU5kvtz9Y6edk6IfpT8qfeylWmSgDaKkA"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
@@ -21,7 +22,7 @@
     <h3>Père Lachaise people finder</h3>
     <div class="container-fluid">
       <div class="row">
-        <input class="search-name" type="search">
+        <input class="search-name col-xs-12 col-sm-4 form-control" type="search" placeholder="Filter your search">
         <div class="col-xs-12 col-sm-4 main-body name">
           <div class="checkbox">
             <label>
@@ -1206,7 +1207,7 @@
         </div>
         <div class="col-xs-12 col-sm-8 main-body map">
           <div id="map-canvas"></div>
-        </div>
+        </div><a class="credit" href="https://github.com/Zivi/plotPlotter/">Made with<span class="croissant">&#129360;</span>by Zivi Weinstock</a>
       </div>
     </div>
     <script src="app/scripts/main.js"></script>
