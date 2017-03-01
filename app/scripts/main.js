@@ -9,6 +9,17 @@ function initialize() {
       mapOptions);
   console.log('map loaded');
 
+  $('.search-name').keyup(function(event) {
+    var searchTerm = event.target.value.toLowerCase();
+    $('.checkbox').each(function(index, element){
+      if ($(element).find('.plot-names').attr('name').toLowerCase().indexOf(searchTerm) !== -1) {
+        $('.checkbox').eq(index).show();
+      } else {
+        $('.checkbox').eq(index).hide();
+      }
+    })
+  });
+
   $('.plot-names').click(function(event) {
     var marker,
       infowindow,

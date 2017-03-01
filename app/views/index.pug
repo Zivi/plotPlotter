@@ -11,6 +11,9 @@ html.no-js(lang='')
     // Optional theme
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
     link(rel='stylesheet', href='app/styles/main.css')
+    // Maps for local development
+    //script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false')
+    // Maps for production
     script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBU5kvtz9Y6edk6IfpT8qfeylWmSgDaKkA')
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
 
@@ -19,6 +22,10 @@ html.no-js(lang='')
     h3 Père Lachaise people finder
     .container-fluid
       .row
+        input.search-name.col-xs-12.col-sm-4.form-control(
+          type='search'
+          placeholder='Filter your search'
+        )
         .col-xs-12.col-sm-4.main-body.name
           each plot in monuments
             .checkbox
@@ -33,4 +40,11 @@ html.no-js(lang='')
               br
         .col-xs-12.col-sm-8.main-body.map
           #map-canvas
+        a.credit(
+          href='https://github.com/Zivi/plotPlotter/'
+          )
+          | Made with
+          span.croissant &#129360;
+          | by Zivi Weinstock
+
     script(src='app/scripts/main.js')
