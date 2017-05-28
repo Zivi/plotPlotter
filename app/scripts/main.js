@@ -1,6 +1,5 @@
 'use strict';
 function initialize() {
-
   var mapOptions = {
     center: { lat: 48.8607200, lng: 2.3949340},
     zoom: 16
@@ -18,6 +17,13 @@ function initialize() {
         $('.checkbox').eq(index).hide();
       }
     })
+    $('.clear').show();
+  });
+
+  $('.clear').click(function(event) {
+    $('.search-name').val('');
+    $('.checkbox').show();
+    $('.clear').hide();
   });
 
   $('.plot-names').click(function(event) {

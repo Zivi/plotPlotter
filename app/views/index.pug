@@ -26,6 +26,7 @@ html.no-js(lang='')
           type='search'
           placeholder='Filter your search'
         )
+        button.clear &times;
         .col-xs-12.col-sm-4.main-body.name
           each plot in monuments
             .checkbox
@@ -40,12 +41,13 @@ html.no-js(lang='')
               br
         .col-xs-12.col-sm-8.main-body.map
           #map-canvas
-        a.credit(
-          href='https://github.com/Zivi/plotPlotter/'
-          )
-          | Made with
-          span.croissant &#129360;
-          | by Zivi Weinstock
+      .row
+      a.credit(
+        href='https://github.com/Zivi/plotPlotter/'
+        )
+        | Made with
+        span.croissant &#129360;
+        | by Zivi Weinstock
 
     script(src='app/scripts/main.js')
     script.
