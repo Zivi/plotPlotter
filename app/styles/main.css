@@ -17,6 +17,19 @@ h1, h3 {
   border-radius: 0;
   position: relative;
 }
+.app-button {
+  border-radius: 2px;
+  background: white;
+  position: absolute;
+  border: 0px;
+  font-size: 11px;
+  padding: 11px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+.show-location {
+  top: 18px;
+  right: 18px;
+}
 .clear {
   position: absolute;
   font-size: 19px;

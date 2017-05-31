@@ -22,11 +22,12 @@ html.no-js(lang='')
     h3 Père Lachaise people finder
     .container-fluid
       .row
-        input.search-name.col-xs-12.col-sm-4.form-control(
+        input.search-name.col-xs-12.col-sm-12.form-control(
           type='search'
           placeholder='Filter your search'
         )
         button.clear &times;
+      .row
         .col-xs-12.col-sm-4.main-body.name
           each plot in monuments
             .checkbox
@@ -41,13 +42,14 @@ html.no-js(lang='')
               br
         .col-xs-12.col-sm-8.main-body.map
           #map-canvas
+          button.btn.app-button.show-location Show My Location
       .row
-      a.credit(
-        href='https://github.com/Zivi/plotPlotter/'
-        )
-        | Made with
-        span.croissant &#129360;
-        | by Zivi Weinstock
+        a.credit(
+          href='https://github.com/Zivi/plotPlotter/'
+          )
+          | Made with
+          span.croissant &#129360;
+          | by Zivi Weinstock
 
     script(src='app/scripts/main.js')
     script.
