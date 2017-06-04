@@ -22,7 +22,10 @@
     <h3>Père Lachaise people finder</h3>
     <div class="container-fluid">
       <div class="row">
-        <input class="search-name col-xs-12 col-sm-4 form-control" type="search" placeholder="Filter your search">
+        <input class="search-name col-xs-12 col-sm-12 form-control" type="search" placeholder="Filter your search">
+        <button class="clear">&times;</button>
+      </div>
+      <div class="row">
         <div class="col-xs-12 col-sm-4 main-body name">
           <div class="checkbox">
             <label>
@@ -1207,8 +1210,10 @@
         </div>
         <div class="col-xs-12 col-sm-8 main-body map">
           <div id="map-canvas"></div>
-        </div><a class="credit" href="https://github.com/Zivi/plotPlotter/">Made with<span class="croissant">&#129360;</span>by Zivi Weinstock</a>
+          <button class="btn app-button show-location">Show My Location</button>
+        </div>
       </div>
+      <div class="row"><a class="credit" href="https://github.com/Zivi/plotPlotter/">Made with<span class="croissant">&#129360;</span>by Zivi Weinstock</a></div>
     </div>
     <script src="app/scripts/main.js"></script>
     <script>
